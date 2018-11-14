@@ -1,0 +1,16 @@
+<h3>User form - with FormGroup</h3>
+<form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+  <br />
+  <br />
+  <button type="submit" [disabled]="!userForm.valid">Submit</button>
+</form>
