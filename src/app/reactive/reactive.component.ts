@@ -14,5 +14,9 @@ export class ReactiveComponent implements OnInit {
 
   ngOnInit() {
   }
+  
+  defaultName() {
+    this.name.setValue('default name');
+  }
 
 }

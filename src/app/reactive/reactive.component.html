@@ -1,4 +1,14 @@
-<label>
-  Name:
-  <input type="text" [formControl]="name">
-</label>
+<div class="text-center">
+  <label>
+    Name:
+    <input type="text" [formControl]="name">
+  </label>
+  <h3>Displaying form control value</h3>
+  <p>
+    Name value: {{ name.value }}
+  </p>
+  <h3>Changing form control value</h3>
+  <p>
+    <button (click)="defaultName()">Default Name</button>
+  </p>
+</div>
