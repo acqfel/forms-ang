@@ -1,4 +1,4 @@
-<h3>User form - with FormGroup</h3>
+<h3>User form - with FormBuilder</h3>
 <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
 
   <label>
@@ -38,8 +38,6 @@
   </div>
   
   <p>
-    <button (click)="exampleData()">Example Data</button>
-    <button (click)="clearForm()">Clear Form</button>
     <button type="submit" [disabled]="!userForm.valid">Submit</button>
   </p>
   
