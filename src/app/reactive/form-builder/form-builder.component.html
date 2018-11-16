@@ -24,7 +24,8 @@
       City:
       <input type="text" formControlName="city">
     </label>
-    
+    <br />
+    <br />
     <label>
       State:
       <input type="text" formControlName="state">
@@ -36,6 +37,9 @@
     </label>
     
   </div>
+  
+  <p>Form Status: {{ userForm.value | json }}</p>
+  <p>Form Status: {{ userForm.status }}</p>
   
   <p>
     <button type="submit" [disabled]="!userForm.valid">Submit</button>
