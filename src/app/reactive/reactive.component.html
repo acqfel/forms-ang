@@ -1,7 +1,14 @@
 <div class="text-center">
   <label>
     Name:
-    <input type="text" [formControl]="name">
+    <input id="name" type="text" [formControl]="name" required>
+    
+    <div *ngIf="name.invalid && (name.dirty || name.touched)"
+      class="alert">
+      <div *ngIf="name.errors.required">
+        Name is required.
+      </div>
+    </div>
   </label>
   <h3>Displaying form control value</h3>
   <p>
